@@ -1,0 +1,21 @@
+<img class="background" src="/assets/login_bg.jpg">
+<div class="box">
+<img class="logo" (click)="navigateByUrl('home')" src="/assets/logo_horizontal.png">
+<p class="logo-text">seu lar em boas mãos</p>
+<div class="form">
+    <p>Confirme seu e-mail para recuperar a senha.</p>
+<div class="text-box">
+    <p>Email</p>
+    <input [(ngModel)]="email" type="email" placeholder="Digite seu e-mail">
+</div>
+<div class="text-box">
+    <p>Confirmar e-mail</p>
+    <input [(ngModel)]="email2" type="email" placeholder="Digite seu e-mail">
+</div>
+<br>
+<p *ngIf="send" ><strong>Confira o link recebido no e-mail!</strong></p>
+<p *ngIf="error" ><strong>E-mail não encontrado, confirme as informações!</strong></p>
+<button (click)="comparisonEmail(email, email2)">Enviar</button>
+</div>
+</div>
+<div class="bg-box"></div>

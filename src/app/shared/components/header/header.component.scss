@@ -1,0 +1,38 @@
+.header {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 15px;
+}
+
+.icon {
+    width: 3%;
+    position:absolute;
+    right: 10px;
+    top: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li {
+    font-size: x-large;
+    padding: 10px;
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+}

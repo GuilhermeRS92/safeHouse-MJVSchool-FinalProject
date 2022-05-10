@@ -1,0 +1,23 @@
+<div class="header">
+      <img (click)="navigateByUrl('')" class = "logo" src="/assets/logo_vertical.png">
+  <nav>
+      <ul>
+        <li (click)="navigateByUrl('home')" *ngIf="!user">A safeHouse</li>
+        <li *ngIf="!user">|</li>
+        <li (click)="navigateByUrl('nossos-planos')" *ngIf="!user">Nossos Planos</li>
+        <li *ngIf="!user">|</li>
+        <li (click)="navigateByUrl('faq')" *ngIf="!user">Tire suas dúvidas</li>
+        <li *ngIf="!user">|</li>
+        <li (click)="navigateByUrl('informacoes')" *ngIf="user"><a>Home</a></li>
+        <li *ngIf="user">|</li>
+        <li (click)="navigateByUrl('ocorrencias')" *ngIf="user"><a>Ocorrências</a></li>
+        <li *ngIf="user">|</li>
+        <li (click)="navigateByUrl('nossos-planos')" *ngIf="user"><a>Meu Plano</a></li>
+        <li *ngIf="user">|</li>
+        <li (click)="navigateByUrl('perfil')" *ngIf="user"><a>Perfil</a></li>
+      </ul>
+  </nav>
+        <img *ngIf="!user" (click)="navigateByUrl('login')" class="icon" src="/assets/login-icon.png">
+        <img *ngIf="user" (click)="logout()" class="icon" src="/assets/logout-icon.png">
+</div>
+<hr color="red">

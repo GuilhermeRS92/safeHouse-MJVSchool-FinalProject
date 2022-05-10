@@ -1,0 +1,35 @@
+<app-header></app-header>
+<body>
+<div class="color-background">
+    <div class="content">
+        <div class="text-box">
+        <h1>Seus dados</h1>
+        <h2>Nome</h2>
+        <p>{{ user?.name }}</p>
+        <h2>CPF</h2>
+        <p>{{ user?.CPF | cpf }}</p>
+        <h2>Data de Nascimento</h2>
+        <p>{{ user?.birthday }}</p>
+        <h2>E-mail</h2>
+        <p>{{ user?.email }}</p>
+        <h1>Endereço</h1>
+        <h2>Rua</h2>
+        <p>{{ user?.street }}</p>
+        <h2>Complemento</h2>
+        <p>{{ user?.complement }}</p>
+        <h2>Bairro  - Cidade - UF</h2>
+        <p>{{ user?.district }} - {{ user?.city }} - {{ user?.state }}</p>
+        <h1>Dados de Pagamento</h1>
+        <h2>Cartão</h2>
+        <p>{{ user?.creditCard | creditCard }}</p>
+            <div class="buttons">
+            <button style="background-color: red;">Editar dados pessoais</button>
+            <button style="background-color: darkblue;">Editar endereço</button>
+            <button style="background-color: darkgreen">Editar forma de pagamento</button>
+            </div>
+        </div>
+    </div>
+</div>
+<img class="background" src="/assets/perfil_bg.jpg">
+</body>
+<app-footer></app-footer>

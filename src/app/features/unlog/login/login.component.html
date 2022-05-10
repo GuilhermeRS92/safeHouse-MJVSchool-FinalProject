@@ -1,0 +1,22 @@
+<img class="background" src="/assets/login_bg.jpg">
+<div class="box">
+<img (click)="navigateByUrl('home')" class="logo" src="/assets/logo_horizontal.png">
+<p class="logo-text">seu lar em boas mãos</p>
+<div class="form">
+<div class="text-box">
+    <p>Email</p>
+    <input [(ngModel)]="email" type="email" placeholder="Digite seu e-mail">
+</div>
+<div class="text-box">
+    <p>Senha</p>
+    <input [(ngModel)]="password"  type="password" placeholder="Digite a sua senha">
+</div>
+<p><strong><a (click)="navigateByUrl('lembrar-senha')">Lembrar a senha.</a></strong></p>
+<p>Não tem conta? <strong><a (click)="navigateByUrl('cadastro')">Cadastre-se aqui.</a></strong></p>
+<button (click)="login()">Entrar</button>
+<p (click)="navigateByUrl('lembrar-senha')" *ngIf="error === true"><strong>E-mail e/ou senha inválidos. <br>
+    Tente novamente ou clique em "Lembrar a senha"
+</strong></p>
+</div>
+</div>
+<div class="bg-box"></div>

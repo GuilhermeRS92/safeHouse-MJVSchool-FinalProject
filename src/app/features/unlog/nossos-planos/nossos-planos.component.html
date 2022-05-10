@@ -1,0 +1,95 @@
+<header>
+    <app-header></app-header>
+</header>
+<div>
+    <h3>Conheça os nossos planos e escolha o melhor para você!</h3>
+
+    <div class="container">
+
+        <div id="standard" class="box">
+            <div class="content">
+                <div class="title">
+                <p>Plano</p>
+                <h1>Standard</h1>
+                </div>
+                <p style="line-height: 0%;"><strong>Cobertura</strong></p>
+                <ul>
+                    <li>Danos por Àgua</li>
+                    <li>Incêndio/Raio</li>
+                    <li>Explosão/Fumaça
+                        Vendaval/Granizo/Furacão/
+                    </li>
+                    <li>Tornado/Ciclone;</li>
+                    <li>Impacto de Veículos Terrestres;</li>
+                    <li>Queda de Aeronave;</li>
+                    <li>Danos Elétricos.</li>
+                </ul>
+                <h2 *ngIf="plus || premium|| unsubscribed">R$9,99</h2>
+                <p *ngIf="plus || premium || unsubscribed">por mês</p>
+                <h4 *ngIf="standard">Esse é seu plano atual!</h4>
+                <p class="upgrade" *ngIf="standard">Quer mais cobertura? Faça upgrade de plano e fique mais tranquilo!</p>
+                <button *ngIf="unsubscribed" (click)="navigateByUrl('')">ASSINE</button>
+                <button *ngIf="!signedIn" (click)="navigateByUrl('login')">ASSINE</button>
+                <button *ngIf="plus || premium" onclick="standardSubscription()">Alterar plano</button>
+            </div>
+        </div>
+
+        <div id="plus" class="box">
+            <div class="content">
+                <div class="title">
+                <p>Plano</p>
+                <h1>Plus</h1>
+                </div>
+                <p style="line-height: 0%;"><strong>Cobertura</strong></p>
+                <ul>
+                    <li> Todas do Plano Essencial</li>
+                    <p style="font-size: 20px;"><strong>+</strong></p>
+                    <li> Quebra de Vidros</li>
+                    <li> Roubo ou Furto mediante
+                    arrombamento</li>
+                    <li><strong>Assistência 24h</strong></li>
+                </ul>
+                <br>
+                <h2 *ngIf="standard || premium || unsubscribed">R$29,99</h2>
+                <p *ngIf="standard || premium || unsubscribed">por mês</p>
+                <h4 *ngIf="plus">Esse é seu plano atual!</h4>
+                <p class="upgrade" *ngIf="plus">Quer mais cobertura? Faça upgrade de plano e fique mais tranquilo!</p>
+                <button *ngIf="unsubscribed" (click)="navigateByUrl('')">ASSINE</button>
+                <button *ngIf="!signedIn" (click)="navigateByUrl('login')">ASSINE</button>
+                <button *ngIf="standard || premium">Alterar plano</button>
+            </div>
+        </div>
+
+        <div id="premium" class="box">
+            <div class="content">
+                <div class="title">
+                <p style="color: black;">Plano</p>
+                <h1 style="color: black;">Premium</h1>
+                </div>
+                <p style="line-height: 0%; color: black;"><strong>Cobertura</strong></p>
+                <ul style="color: black;">
+                    <li> Todas do Plano Plus</li>
+                    <p style="font-size: 20px;"><strong>+</strong></p>
+                    <li> Responsabilidade Civil Familiar</li>
+                    <li> Perda e Pagamento de Aluguel</li>
+                    <li> Despesas Emergenciais</li>
+                    <li><strong>Benefícios Premium</strong></li>
+                </ul>
+                <br>
+                <h2 style="color: black;" *ngIf="standard || plus || unsubscribed">R$59,99</h2>
+                <p style="color: black;" *ngIf="standard || plus || unsubscribed">por mês</p>
+                <h4 *ngIf="premium" style="color: black;">Esse é seu plano atual!</h4>
+                <p class="upgrade" *ngIf="premium" style="color: black;">Aproveite todas as nossas coberturas, confira seus <a style="color: black; font-weight: bolder; cursor: pointer;">Benefícios Premium</a>!</p>
+                <button style="background-color: black;" *ngIf="unsubscribed" (click)="navigateByUrl('')">ASSINE</button>
+                <button style="background-color: black;" *ngIf="!signedIn" (click)="navigateByUrl('login')">ASSINE</button>
+                <button style="background-color: black;" *ngIf="standard || plus">Alterar plano</button>
+            </div>
+        </div>
+
+    </div>
+
+    <img class="background" src="/assets/planos_bg.jpg">
+</div>
+<footer>
+    <app-footer></app-footer>
+</footer>

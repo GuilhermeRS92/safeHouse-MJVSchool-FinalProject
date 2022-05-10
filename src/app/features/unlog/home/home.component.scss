@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.bannerG {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  }
+
+.bannerM {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.anuncio1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #FFDCDC;
+  padding: 10px;
+}
+
+.anuncioG{
+  width: 100%;
+  background-color: #FF8C8C;
+  padding: 44px 0 44px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anuncioG1 {
+  padding: 20px;
+}
+
+.anuncioG2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.49);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+button {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+  cursor: pointer;
+}
+
+  img {
+    border-radius: 10px;
+  }
+
+.red {
+  color: red;
+}

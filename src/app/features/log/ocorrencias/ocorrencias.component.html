@@ -1,0 +1,77 @@
+<body>
+    <app-header></app-header>
+    <div class="background">
+
+        <div id="addOcorrencia">
+            <div class="content">
+                <div style="padding-bottom: 0px;" class="title">
+                <h1>Adicionar ocorrência</h1>
+                </div>
+            <form #incidentForm="ngForm" class="form">
+
+                <div class="text-box">
+                    <p>Tipo de ocorrência</p>
+                    <input list="coberturas" ngModel name="type" required>
+
+                    <datalist id="coberturas">
+                        <option value="Dano por àgua">
+                        <option value="Incêndio/Raio">
+                        <option value="Explosão/Fumaça">
+                        <option value="Vendaval/Granizo/Furacão/Tornado/Ciclone">
+                        <option value="Impacto de Veículos Terrestres">
+                        <option value="Queda de Aeronave">
+                        <option value="Dano Elétrico">
+                        <option value="Quebra de Vidro">
+                        <option value="Roubo ou Furto">
+                        <option value="Assistência 24h">
+                        <option value="Responsabilidade Civil Familiar">
+                        <option value="Perda e Pagamento de Aluguel">
+                        <option value="Despesas Emergenciais">
+                    </datalist>
+                </div>
+
+                <div class="text-box">
+                    <p>Data da Ocorrência</p> <input type="date" ngModel name="incidentDate" required>
+                </div>
+
+                <div class="text-box">
+                    <p>Descreva o ocorrido</p> <input class="description-box" type="text" ngModel name="description" required>
+                </div>
+
+            </form>
+                <p style="font-size: small;">Entraremos em contato o mais breve possível para solucionar sua ocorrência</p>
+                <button [disabled]="incidentForm.invalid" (click)="onSubmitIncident(incidentForm)">Enviar ocorrência</button>
+
+            </div>
+        </div>
+
+        <div id="ocorrencias">
+            <div style="padding-bottom: 0px;" class="title">
+                <h1>Suas ocorrências</h1>
+                </div>
+
+            <div class="ocorList">
+                <table>
+                    <table>
+                        <colgroup span="3" class="columns"></colgroup>
+                        <tr>
+                          <th>Tipo</th>
+                          <th>Data</th>
+                          <th>Status</th>
+                        </tr>
+                        <tr *ngFor="let incidents of filteredIncidents">
+                          <td>{{ incidents.type }}</td>
+                          <td>{{ incidents.inclusionDate | date }} </td>
+                          <td>{{ incidents.status }}</td>
+                          <td><button (click)="removeIncidentById()">Excluir</button></td>
+                        </tr>
+                        <th colspan="4" *ngIf="showMessageError" style="color: green;">Você não possui nenhuma ocorrência!</th>
+                      </table>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+    </body>
+    <app-footer></app-footer>

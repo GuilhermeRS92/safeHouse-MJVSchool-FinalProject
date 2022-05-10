@@ -1,0 +1,75 @@
+<body>
+<app-header></app-header>
+<div>
+    <p>Seja bem-vindo(a), <strong>{{ user?.name }}</strong>!</p>
+    <p>Gerencie as informações da sua conta <strong>safeHouse</strong>.</p>
+</div>
+<div class="background">
+
+    <div id="plano" class="box">
+        <div class="content">
+            <div style="padding-bottom: 0px;" class="title">
+            <p *ngIf="standard">Plano</p>
+            <h1 *ngIf="standard">{{ user?.subscription }}</h1>
+            </div>
+            <p style="line-height: 0%;" *ngIf="standard"><strong>Cobertura</strong></p>
+            <ul *ngIf="standard">
+                <li>Danos por Àgua</li>
+                <li>Incêndio/Raio</li>
+                <li>Explosão/Fumaça
+                    Vendaval/Granizo/Furacão/
+                </li>
+                <li>Tornado/Ciclone;</li>
+                <li>Impacto de Veículos Terrestres;</li>
+                <li>Queda de Aeronave;</li>
+                <li>Danos Elétricos.</li>
+                <details *ngIf="plus">
+                <summary *ngIf="plus"><b>Veja mais coberturas do seu plano</b></summary>
+                <li *ngIf="plus">Quebra de Vidros</li>
+                <li *ngIf="plus">Roubo ou Furto mediante arrombamento</li>
+                <li *ngIf="plus"><b>Assistência 24h</b></li>
+                <li *ngIf="premium">Responsabilidade Civil Familiar</li>
+                <li *ngIf="premium">Perda e Pagamento de Aluguel</li>
+                <li *ngIf="premium">Despesas Emergenciais</li>
+                <li *ngIf="premium"><b>Benefícios Premium</b></li>
+                </details>
+            </ul>
+            <h1 *ngIf="!standard">Atenção!</h1>
+            <h4 *ngIf="!standard">{{ user?.name }},</h4>
+            <p *ngIf="!standard">Você ainda não assinou nenhum dos nossos planos!</p>
+            <p *ngIf="!standard">Veja o que melhor se encaixa no seu perfil, assine e fique tranquilo(a)!</p>
+            <br *ngIf="!standard">
+            <div class="buttons">
+            <button *ngIf="!standard" (click)="navigateByUrl('nossos-planos')">ASSINAR</button>
+            <button *ngIf="standard" (click)="navigateByUrl('nossos-planos')">ALTERAR</button>
+            <button>Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="ocorrencias" class="box">
+        <div class="content">
+            <h4>Você tem <br>
+            <strong class=ocorNum>{{ incidentsTotal }}</strong> <br>
+            ocorrência(s)
+            pendente(s)
+            </h4>
+            <button (click)="navigateByUrl('ocorrencias')">Ver ocorrências</button>
+        </div>
+    </div>
+
+    <div id="financeiro" class="box">
+        <div class="content">
+                <p><strong>Cobranças anteriores</strong></p>
+                <p>30/02/2022 - R$29,99</p>
+                <p>31/03/2022 - R$29,99</p>
+                <p>30/04/2022 - R$29,99</p>
+                <p><strong>Próxima cobrança</strong></p>
+                <p>30/05/2022 - R$29,99</p>
+            <button>Editar pagamento</button>
+        </div>
+    </div>
+
+</div>
+</body>
+<app-footer></app-footer>

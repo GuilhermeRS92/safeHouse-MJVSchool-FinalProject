@@ -1,0 +1,30 @@
+<img class="background" src="/assets/cadastro_bg.jpg">
+<div class="box">
+<div class="logo" (click)="navigateByUrl('home')"><img src="/assets/logo_horizontal.png"></div>
+<h4 style="line-height: 0%;" *ngIf="userForm.invalid">Preencha todas as informações para realizar o cadastro.</h4>
+<form #userForm="ngForm" class="form">
+
+<div class="text-box">
+    <p>Nome</p> <input type="text" ngModel name="name" required>
+</div>
+<div class="text-box">
+    <p>CPF</p>
+    <input type="number" placeholder="Somente os números, sem pontos(.) e traço(-)." maxlength="11" ngModel name="CPF" required>
+</div>
+<div class="text-box">
+    <p>Data de Nascimento</p> <input type="date" ngModel name="birthday" required>
+</div>
+<div class="text-box">
+    <p>Email</p> <input type="email" ngModel name="email" required>
+</div>
+<div class="text-box">
+    <p>Senha</p> <input type="password" ngModel name="password" required>
+</div>
+<div class="text-box">
+    <p>Confirmar senha</p> <input type="password" ngModel name="password2" required>
+</div>
+<br>
+<br>
+<button [disabled]="userForm.invalid" (click)="onSubmitUser(userForm)">Enviar</button>
+</form>
+</div>

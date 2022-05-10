@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.background {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    }
+
+.box {
+    width: 510px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    left: 30%;
+    justify-content: center;
+    z-index: 1;
+}
+
+.logo {
+    width: 55%;
+    padding-left: 115px; 
+    padding-top: 45px;
+    cursor: pointer;
+}
+
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: red;
+    position:relative;
+    bottom: 15px
+}
+
+.form {
+    width: 460;
+    height: 410;
+    text-align: center;
+}
+
+.text-box {
+    padding-left: 10%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #2f2f30;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;;
+}
+
+button {
+    width: 80%;
+    height: 45px;
+    border-radius: 45px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    color: white;
+    background-color: red;
+    border: transparent;
+    cursor: pointer;
+}
+
+input {
+    width: 88%;
+    height: 35px;
+    border-radius: 35px;
+    border: transparent;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: medium;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.bg-box {
+    width: 510px;
+    height: 600px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, rgba(255,0,0,0.6) 0%, rgba(252,220,193,0.6) 100%);
+    position: fixed;
+    left: 30%;
+    justify-content: center;
+    z-index: 0;
+}
