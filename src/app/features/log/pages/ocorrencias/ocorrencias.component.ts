@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Incident } from '../../models/incident.model';
-import { IncidentsService } from '../../services/incidents.service';
+import { Incident } from '../../../../shared/models/incident.model';
+import { IncidentsService } from '../../../../shared/services/incidents.service';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { User } from '../../models/user.model';
+import { User } from '../../../../shared/models/user.model';
 import * as moment from 'moment';
 
 @Component({

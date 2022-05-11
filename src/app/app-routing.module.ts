@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InformacoesComponent } from './features/log/informacoes/informacoes.component';
-import { OcorrenciasComponent } from './features/log/ocorrencias/ocorrencias.component';
-import { PerfilComponent } from './features/log/perfil/perfil.component';
-import { CadastroComponent } from './features/unlog/cadastro/cadastro.component';
-import { HomeComponent } from './features/unlog/home/home.component';
-import { LembrarSenhaComponent } from './features/unlog/lembrar-senha/lembrar-senha.component';
-import { LoginComponent } from './features/unlog/login/login.component';
-import { NossosPlanosComponent } from './features/unlog/nossos-planos/nossos-planos.component';
-import { SobreNosComponent } from './features/unlog/sobre-nos/sobre-nos.component';
-import { FaqComponent } from './features/unlog/faq/faq.component';
+import { InformacoesComponent } from './features/log/pages/informacoes/informacoes.component';
+import { OcorrenciasComponent } from './features/log/pages/ocorrencias/ocorrencias.component';
+import { PerfilComponent } from './features/log/pages/perfil/perfil.component';
+import { CadastroComponent } from './features/unlog/pages/cadastro/cadastro.component';
+import { HomeComponent } from './shared/pages/home/home.component';
+import { LembrarSenhaComponent } from './features/unlog/pages/lembrar-senha/lembrar-senha.component';
+import { LoginComponent } from './features/unlog/pages/login/login.component';
+import { NossosPlanosComponent } from './shared/pages/nossos-planos/nossos-planos.component';
+import { SobreNosComponent } from './features/unlog/pages/sobre-nos/sobre-nos.component';
+import { FaqComponent } from './features/unlog/pages/faq/faq.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 
 const routes: Routes = [

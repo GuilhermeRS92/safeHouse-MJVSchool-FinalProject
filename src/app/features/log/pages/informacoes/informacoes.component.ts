@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Incident } from '../../models/incident.model';
-import { User } from '../../models/user.model';
-import { IncidentsService } from '../../services/incidents.service';
+import { Incident } from '../../../../shared/models/incident.model';
+import { User } from '../../../../shared/models/user.model';
+import { IncidentsService } from '../../../../shared/services/incidents.service';
 
 @Component({
   templateUrl: './informacoes.component.html',
