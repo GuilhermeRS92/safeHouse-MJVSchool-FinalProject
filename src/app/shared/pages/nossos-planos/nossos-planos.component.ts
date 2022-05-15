@@ -19,6 +19,7 @@ export class NossosPlanosComponent implements OnInit {
   unsubscribed?: boolean = false;
   subscription = this.user?.subscription;
   signedIn: boolean = false;
+  userSubscription: string | undefined = '';
 
   ngOnInit(): void {
     const userStorage = sessionStorage.getItem('user')
@@ -39,8 +40,14 @@ export class NossosPlanosComponent implements OnInit {
       return this.router.navigateByUrl(url)
     }
 
-    standardSubscription() {
+    /* 
+    Quando clicar no botão de inscrever-se
+    Atualiza o subscription para o novo plano
+    */
 
+
+    standardSubscription() {
+      
     }
 
   }
