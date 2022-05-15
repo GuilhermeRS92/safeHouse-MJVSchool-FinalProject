@@ -72,8 +72,9 @@ export class FaqListComponent implements OnInit {
     const searchValue = event.target.value;
     if (searchValue.length > 0) {
       this.filteredFaq = this.faqs.filter((faq) => faq.question.toUpperCase().search(searchValue.toUpperCase()) > - 1);
+      if(this.filteredFaq.length === 0) this.showMessageError = true;
       return this.filteredFaq;
-    } return this.filteredFaq = this.faqs
+    } return this.filteredFaq = this.faqs;
   }
 
 
