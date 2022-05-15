@@ -47,12 +47,16 @@ export class OcorrenciasComponent implements OnInit {
     this.incident.description = formValue.description;
     this.incident.status = 'Aguardando atendimento';
     this.incidentsService.createIncident(this.incident);
-    window.alert('Ocorrência adicionada com sucesso!')
-    console.log(this.filteredIncidents)
+    window.alert('Ocorrência adicionada com sucesso!');
+    this.navigateByUrl("/informacoes")
   }
 
   removeIncidentById() {
     if(this.incident) this.incidentsService.removeIncidentById(this.incident.id);
+  }
+
+  navigateByUrl (url: string) {
+    return this.router.navigateByUrl(url);
   }
 
 }

@@ -51,23 +51,7 @@
                 </div>
 
             <div class="ocorList">
-                <table>
-                    <table>
-                        <colgroup span="3" class="columns"></colgroup>
-                        <tr>
-                          <th>Tipo</th>
-                          <th>Data</th>
-                          <th>Status</th>
-                        </tr>
-                        <tr *ngFor="let incidents of filteredIncidents">
-                          <td>{{ incidents.type }}</td>
-                          <td>{{ incidents.inclusionDate | date }} </td>
-                          <td>{{ incidents.status }}</td>
-                          <td><button (click)="removeIncidentById()">Excluir</button></td>
-                        </tr>
-                        <th colspan="4" *ngIf="showMessageError" style="color: green;">Você não possui nenhuma ocorrência!</th>
-                      </table>
-                </table>
+                <app-ocorrencias-list></app-ocorrencias-list>
             </div>
 
         </div>

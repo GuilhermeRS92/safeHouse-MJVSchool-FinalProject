@@ -40,14 +40,68 @@ export class NossosPlanosComponent implements OnInit {
       return this.router.navigateByUrl(url)
     }
 
-    /* 
-    Quando clicar no botão de inscrever-se
-    Atualiza o subscription para o novo plano
-    */
-
-
     standardSubscription() {
-      
+      if(sessionStorage.length > 0) {
+        this.userService.changeSubscription(Number(this.user?.id), 'Standard');
+        sessionStorage.clear();
+        const newUser = { 
+          ...this.userService.users.find(user => user.id === this.user?.id)
+        }
+        delete newUser.password;
+    
+        sessionStorage.setItem('user', JSON.stringify(newUser))
+
+        this.navigateByUrl('informacoes')
+      } else {
+        this.navigateByUrl('login')
+      }
+    }
+    
+    plusSubscription() {
+      if(sessionStorage.length > 0) {
+        this.userService.changeSubscription(Number(this.user?.id), 'Plus')
+        sessionStorage.clear();
+        const newUser = { 
+          ...this.userService.users.find(user => user.id === this.user?.id)
+        }
+        delete newUser.password;
+    
+        sessionStorage.setItem('user', JSON.stringify(newUser))
+
+        this.navigateByUrl('informacoes')
+      } else {
+        this.navigateByUrl('login')
+      }
+    }
+
+    premiumSubscription() {
+    if(sessionStorage.length > 0) {
+      this.userService.changeSubscription(Number(this.user?.id), 'Premium')
+      sessionStorage.clear();
+      const newUser = { 
+        ...this.userService.users.find(user => user.id === this.user?.id)
+      }
+      delete newUser.password;
+  
+      sessionStorage.setItem('user', JSON.stringify(newUser))
+
+      this.navigateByUrl('informacoes')
+    } else {
+      this.navigateByUrl('login')
+    }
+    }
+
+    cancelSubscription() {
+      this.userService.changeSubscription(Number(this.user?.id), 'unsubscribed')
+      sessionStorage.clear();
+      const newUser = { 
+        ...this.userService.users.find(user => user.id === this.user?.id)
+      }
+      delete newUser.password;
+  
+      sessionStorage.setItem('user', JSON.stringify(newUser))
+
+      this.navigateByUrl('informacoes')
     }
 
   }

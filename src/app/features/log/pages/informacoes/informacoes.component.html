@@ -42,7 +42,7 @@
             <div class="buttons">
             <button *ngIf="!standard" (click)="navigateByUrl('nossos-planos')">ASSINAR</button>
             <button *ngIf="standard" (click)="navigateByUrl('nossos-planos')">ALTERAR</button>
-            <button>Cancelar</button>
+            <button *ngIf="!unsubscribed" (click)="cancelSubscription()">Cancelar</button>
             </div>
         </div>
     </div>

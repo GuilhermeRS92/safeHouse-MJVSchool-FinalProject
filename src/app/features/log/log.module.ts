@@ -5,6 +5,7 @@ import { InformacoesComponent } from './pages/informacoes/informacoes.component'
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { OcorrenciasComponent } from './pages/ocorrencias/ocorrencias.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { OcorrenciasListComponent } from './components/ocorrencias-list/ocorrencias-list.component';
 
 
 
@@ -12,7 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
   InformacoesComponent,
   PerfilComponent,
-  OcorrenciasComponent
+  OcorrenciasComponent,
+  OcorrenciasListComponent
   ],
   imports: [
     CommonModule,

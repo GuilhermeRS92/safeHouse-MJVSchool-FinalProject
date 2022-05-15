@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Incident } from '../models/incident.model';
+import { Router } from '@angular/router';
 import * as moment from 'moment';
 
 @Injectable({
@@ -48,7 +49,8 @@ export class IncidentsService {
   }
 
   removeIncidentById(id: number) {
-    window.alert('Ocorrência removida com sucesso!')
+    window.alert('Ocorrência removida com sucesso!');
+    this.navigateByUrl("/informacoes")
     const incidentIndex = this.incidents.findIndex((incident) => incident.id === id);
     return this.incidents.splice(incidentIndex);
   }
@@ -65,5 +67,10 @@ export class IncidentsService {
   totalIncidents() {
     return this.incidents.length
   }
-  constructor() { }
+
+  navigateByUrl (url: string) {
+    return this.router.navigateByUrl(url);
+  }
+
+  constructor(private router: Router) { }
 }

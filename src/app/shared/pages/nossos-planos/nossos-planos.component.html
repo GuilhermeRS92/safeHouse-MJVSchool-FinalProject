@@ -28,9 +28,9 @@
                 <p *ngIf="plus || premium || unsubscribed">por mês</p>
                 <h4 *ngIf="standard">Esse é seu plano atual!</h4>
                 <p class="upgrade" *ngIf="standard">Quer mais cobertura? Faça upgrade de plano e fique mais tranquilo!</p>
-                <button *ngIf="unsubscribed" (click)="navigateByUrl('')">ASSINE</button>
-                <button *ngIf="!signedIn" (click)="navigateByUrl('login')">ASSINE</button>
-                <button *ngIf="plus || premium" onclick="standardSubscription()">Alterar plano</button>
+                <button *ngIf="unsubscribed" (click)="standardSubscription()">ASSINE</button>
+                <button *ngIf="!signedIn" (click)="standardSubscription()">ASSINE</button>
+                <button *ngIf="plus || premium" (click)="standardSubscription()">Alterar plano</button>
             </div>
         </div>
 
@@ -54,9 +54,9 @@
                 <p *ngIf="standard || premium || unsubscribed">por mês</p>
                 <h4 *ngIf="plus">Esse é seu plano atual!</h4>
                 <p class="upgrade" *ngIf="plus">Quer mais cobertura? Faça upgrade de plano e fique mais tranquilo!</p>
-                <button *ngIf="unsubscribed" (click)="navigateByUrl('')">ASSINE</button>
-                <button *ngIf="!signedIn" (click)="navigateByUrl('login')">ASSINE</button>
-                <button *ngIf="standard || premium">Alterar plano</button>
+                <button *ngIf="unsubscribed" (click)="plusSubscription()">ASSINE</button>
+                <button *ngIf="!signedIn" (click)="plusSubscription()">ASSINE</button>
+                <button *ngIf="standard || premium" (click)="plusSubscription()">Alterar plano</button>
             </div>
         </div>
 
@@ -80,9 +80,9 @@
                 <p style="color: black;" *ngIf="standard || plus || unsubscribed">por mês</p>
                 <h4 *ngIf="premium" style="color: black;">Esse é seu plano atual!</h4>
                 <p class="upgrade" *ngIf="premium" style="color: black;">Aproveite todas as nossas coberturas, confira seus <a style="color: black; font-weight: bolder; cursor: pointer;">Benefícios Premium</a>!</p>
-                <button style="background-color: black;" *ngIf="unsubscribed" (click)="navigateByUrl('')">ASSINE</button>
-                <button style="background-color: black;" *ngIf="!signedIn" (click)="navigateByUrl('login')">ASSINE</button>
-                <button style="background-color: black;" *ngIf="standard || plus">Alterar plano</button>
+                <button style="background-color: black;" *ngIf="unsubscribed" (click)="premiumSubscription()">ASSINE</button>
+                <button style="background-color: black;" *ngIf="!signedIn" (click)="premiumSubscription()">ASSINE</button>
+                <button style="background-color: black;" *ngIf="standard || plus" (click)="premiumSubscription()">Alterar plano</button>
             </div>
         </div>
 

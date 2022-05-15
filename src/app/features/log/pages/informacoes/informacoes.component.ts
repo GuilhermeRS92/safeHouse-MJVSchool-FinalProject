@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UsersService } from 'src/app/shared/services/users.service';
 import { Incident } from '../../../../shared/models/incident.model';
 import { User } from '../../../../shared/models/user.model';
 import { IncidentsService } from '../../../../shared/services/incidents.service';
@@ -15,6 +16,7 @@ export class InformacoesComponent implements OnInit {
   standard?: boolean = false;
   plus?: boolean = false;
   premium?: boolean = false;
+  unsubscribed?: boolean = false;
 
   subscription = this.user?.subscription;
 
@@ -23,7 +25,7 @@ export class InformacoesComponent implements OnInit {
   incidentsTotal: number = 0;
 
 
-  constructor(private incidentsService: IncidentsService, private router: Router) { }
+  constructor(private incidentsService: IncidentsService, private userService: UsersService, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -35,6 +37,7 @@ export class InformacoesComponent implements OnInit {
     if(this.user?.subscription === 'Premium') this.premium = true
     if(this.user?.subscription === 'Premium') this.plus = true
     if(this.user?.subscription === 'Premium') this.standard = true
+    if(this.user?.subscription === 'unsubscribed') this.unsubscribed = true
 
     const userId: any = this.user?.id
 
@@ -46,6 +49,19 @@ export class InformacoesComponent implements OnInit {
 
     navigateByUrl (url: string) {
       return this.router.navigateByUrl(url);
+    }
+
+    cancelSubscription() {
+      this.userService.changeSubscription(Number(this.user?.id), 'unsubscribed')
+      sessionStorage.clear();
+      const newUser = { 
+        ...this.userService.users.find(user => user.id === this.user?.id)
+      }
+      delete newUser.password;
+  
+      sessionStorage.setItem('user', JSON.stringify(newUser))
+
+      this.navigateByUrl('nossos-planos')
     }
   }
 

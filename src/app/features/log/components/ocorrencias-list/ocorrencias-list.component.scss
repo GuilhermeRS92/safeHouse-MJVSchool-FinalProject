@@ -1,0 +1,25 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    width: 80%;
+    height: 45px;
+    border-radius: 45px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    color: white;
+    background-color: red;
+    border: transparent;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 670px;
+    height: 290px;
+    background-color: white;
+    border-radius: 15px;
+    border-collapse: collapse;
+}

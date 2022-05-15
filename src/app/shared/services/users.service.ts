@@ -157,4 +157,11 @@ export class UsersService {
     return this.users;
   }
 
+  changeSubscription(userId: Number, subscription: string) {
+    let user = this.users.find(user => user.id === userId)
+    if (user?.subscription !== subscription) {
+      user!.subscription = subscription
+    }
+  }
+
 }
