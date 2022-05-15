@@ -13,7 +13,7 @@ export class PerfilComponent implements OnInit {
 
   ngOnInit(): void {
     const userStorage = sessionStorage.getItem('user')
-    if(userStorage) this.user = JSON.parse(userStorage)
+    if(userStorage) this.user = JSON.parse(userStorage)    
   }
 
 }

@@ -16,7 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         CreditCardPipe,
         CpfPipe,
         HomeComponent,
-        NossosPlanosComponent,
+        NossosPlanosComponent
   ],
   imports: [
     CommonModule,

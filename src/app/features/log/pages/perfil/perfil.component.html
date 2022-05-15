@@ -1,5 +1,5 @@
 <app-header></app-header>
-<body>
+<div class="body">
 <div class="color-background">
     <div class="content">
         <div class="text-box">
@@ -9,7 +9,7 @@
         <h2>CPF</h2>
         <p>{{ user?.CPF | cpf }}</p>
         <h2>Data de Nascimento</h2>
-        <p>{{ user?.birthday }}</p>
+        <p>{{ user?.birthday | date }}</p>
         <h2>E-mail</h2>
         <p>{{ user?.email }}</p>
         <h1>Endereço</h1>
@@ -31,5 +31,5 @@
     </div>
 </div>
 <img class="background" src="/assets/perfil_bg.jpg">
-</body>
+</div>
 <app-footer></app-footer>
