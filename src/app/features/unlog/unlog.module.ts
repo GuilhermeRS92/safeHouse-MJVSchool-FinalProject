@@ -7,6 +7,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { FaqListComponent } from './components/faq-list/faq-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FaqComponent,
     LembrarSenhaComponent,
     LoginComponent,
-    SobreNosComponent 
+    SobreNosComponent,
+    FaqListComponent 
     ],
   imports: [
     CommonModule,

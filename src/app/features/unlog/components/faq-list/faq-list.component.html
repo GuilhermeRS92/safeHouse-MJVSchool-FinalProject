@@ -1,0 +1,9 @@
+<body>
+    <input type="text" placeholder="Possui alguma dúvida? Nos diga qual é!" (keyup)="filterFaq($event)">
+    <main>
+        <details class="box" *ngFor="let faqs of filteredFaq">
+            <summary>{{ faqs.question }}</summary>
+            <p>{{ faqs.answer }}</p>
+        </details>
+    </main>
+</body>

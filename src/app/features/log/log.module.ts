@@ -14,7 +14,7 @@ import { OcorrenciasListComponent } from './components/ocorrencias-list/ocorrenc
   InformacoesComponent,
   PerfilComponent,
   OcorrenciasComponent,
-  OcorrenciasListComponent
+  OcorrenciasListComponent,
   ],
   imports: [
     CommonModule,
