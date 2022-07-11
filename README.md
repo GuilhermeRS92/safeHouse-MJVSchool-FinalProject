@@ -16,11 +16,14 @@
 <hr>
 <br>
 
-<div align="center">
-<img src="https://github.com/GuilhermeRS92/safeHouse-MJVSchool-FinalProject/blob/master/src/assets/01-pagina-inicial.gif?raw=true" alt="Tela Inicial" width="150px">
-<img src="https://github.com/GuilhermeRS92/safeHouse-MJVSchool-FinalProject/blob/master/src/assets/02-login.gif?raw=true" alt="Tela de Login" width="150px">
-<img src="https://github.com/GuilhermeRS92/safeHouse-MJVSchool-FinalProject/blob/master/src/assets/03-ocorrencia.gif?raw=true" alt="Tela de Ocorrência" width="150px">
-</div>
+### **Tela Inicial**
+<img src="https://github.com/GuilhermeRS92/safeHouse-MJVSchool-FinalProject/blob/master/src/assets/01-pagina-inicial.gif?raw=true" alt="Tela Inicial" width="100px">
+
+### **Tela de Login**
+<img src="https://github.com/GuilhermeRS92/safeHouse-MJVSchool-FinalProject/blob/master/src/assets/02-login.gif?raw=true" alt="Tela de Login" width="100px">
+
+### **Tela de Ocorrência**
+<img src="https://github.com/GuilhermeRS92/safeHouse-MJVSchool-FinalProject/blob/master/src/assets/03-ocorrencia.gif?raw=true" alt="Tela de Ocorrência" width="100px">
 
 <br>
 
