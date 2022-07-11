@@ -1,4 +1,87 @@
-# SafeHouseMJV
+<h1 align="center">
+    <br>
+    <img src="https://github.com/GuilhermeRS92/safeHouse-MJVSchool-FinalProject/blob/master/src/assets/logo_vertical.png?raw=true" alt="safeHOUSE" height="125">
+    <p>seu lar em boas mãos</p>
+    <br>
+</h1>
+
+<p align="center">Uma aplicação web de fácil inscrição em seguro residencial, desenvolvida em Angular.</p>
+
+<!-- <p align="center">A web aplication to easily subscribe to home insurance, developded in Angular.</p> -->
+
+<p align="center"><i>Todos nós precisamos de um lugar para nos sentirmos seguros.</i></p>
+
+<!-- <p align="center"><i>We all need somewhere where we feel safe</i></p> -->
+
+<hr>
+<br>
+
+<p align="center">
+  <a href="#blush-o-projeto">O Projeto</a> •
+  <a href="#dizzy-funcionalidades">Funcionalidades</a> •
+  <a href="#zap-tecnologias-utilizadas">Tecnologias Utilizadas</a> •
+  <a href="#tophat-em-desenvolvimento">Em Desenvolvimento</a> •
+  <a href="#art-sobre-mim">Sobre Mim</a>
+</p>
+
+<!-- <p align="center">
+  <a href="#blush-the-project">The Project</a> •
+  <a href="#dizzy-functionalities">Functionalities</a> •
+  <a href="#zap-tech-stack">Tech Stack</a> •
+  <a href="#tophat-in-development">In Development</a> •
+  <a href="#art-about-me">About Me</a>
+</p> -->
+
+## :blush: **O Projeto**
+
+A safeHOUSE é uma aplicação web ficticia para incrição em planos de seguro residencial com a opção de abrir ocorrências e fazer troca de plano online de forma rápida.
+
+O projeto foi concebido como finalização da School de desenvolvimento em Angular e NodeJS pela MJV, sendo apresentada após a conclusão do curso.
+
+## :dizzy: **Funcionalidades**
+
+- Página de FAQ <i>(com sistema de busca)</i>
+- Cadastro de usuário;
+- Lembrar senha <i>(Validação de e-mails iguais)</i>;
+- Login com validação de senha;
+- Inscrição e Alteração de Plano;
+- Adicionar e excluir ocorrência;
+- Logout;
+
+## :zap: **Tecnologias Utilizadas**
+<br>
+<div align="center">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="50px"> Angular |
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50px"> HTML | 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="50px"> TypeScript
+</div>
+<br>
+
+## :tophat: **Em Desenvolvimento**
+
+<br>
+
+- Conexão com backend em NodeJS;
+- Alterações cadastrais;
+- Cadastro de formas de pagamento;
+- Histórico de Cobranças;
+- Usuário administrador e colaboradores;
+- Resposta de ocorrências;
+
+<br>
+
+## :art: **Sobre Mim**
+
+<p align="center"><i>Um desenvolvedor em desenvolvimento</i></p>
+
+Sou formado em Design Gráfico desenvolvendo meus conhecimentos em Front End com conhecimentos em HTML, CSS, JavaScript, TyperScript, NodeJS e Angular.
+
+<strong>Github:</strong> https://github.com/GuilhermeRS92
+
+<strong>LinkedIn:</strong> https://www.linkedin.com/in/guilhermeribeirosouza/
+
+<strong>Instagram:</strong> https://www.instagram.com/studio_grs/
+<!-- # SafeHouseMJV
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
 
@@ -25,3 +108,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ -->
