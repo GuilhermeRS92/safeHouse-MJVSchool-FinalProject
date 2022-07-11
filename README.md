@@ -16,6 +16,14 @@
 <hr>
 <br>
 
+<div align="center">
+<img src="https://github.com/GuilhermeRS92/safeHouse-MJVSchool-FinalProject/blob/master/src/assets/01-pagina-inicial.gif?raw=true" alt="Tela Inicial" width="150px">
+<img src="https://github.com/GuilhermeRS92/safeHouse-MJVSchool-FinalProject/blob/master/src/assets/02-login.gif?raw=true" alt="Tela de Login" width="150px">
+<img src="https://github.com/GuilhermeRS92/safeHouse-MJVSchool-FinalProject/blob/master/src/assets/03-ocorrencia.gif?raw=true" alt="Tela de Ocorrência" width="150px">
+</div>
+
+<br>
+
 <p align="center">
   <a href="#blush-o-projeto">O Projeto</a> •
   <a href="#dizzy-funcionalidades">Funcionalidades</a> •
