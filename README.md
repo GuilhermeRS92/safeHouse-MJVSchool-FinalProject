@@ -22,8 +22,9 @@
   <a href="#zap-tecnologias-utilizadas">Tecnologias Utilizadas</a> •
   <a href="#tophat-em-desenvolvimento">Em Desenvolvimento</a> •
   <a href="#art-sobre-mim">Sobre Mim</a>
+  <a href="#sparkles-rodar-o-projeto">Rodar o projeto</a>
 </p>
-
+<br>
 <!-- <p align="center">
   <a href="#blush-the-project">The Project</a> •
   <a href="#dizzy-functionalities">Functionalities</a> •
@@ -81,6 +82,16 @@ Sou formado em Design Gráfico desenvolvendo meus conhecimentos em Front End com
 <strong>LinkedIn:</strong> https://www.linkedin.com/in/guilhermeribeirosouza/
 
 <strong>Instagram:</strong> https://www.instagram.com/studio_grs/
+
+<br>
+
+## :sparkles: **Rodar o Projeto**
+
+1. Abra o projeto no VisualStudio;
+2. No terminal rode o comando `npm install`;
+3. Após a instalação, rode o comando `npm start`;
+4. A aplicação irá rodar no navegador através do localhost informado.
+
 <!-- # SafeHouseMJV
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
